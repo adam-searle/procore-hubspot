@@ -1,0 +1,12 @@
+{{>header.partial}}
+<h4>Login</h4>
+<form method="post" action="/login">
+    <label for="email">Username</label>
+    <input class="form-control" type="text" name="username" placeholder="Username" />
+    <label for="password">Password</label>
+    <input class="form-control" type="password" name="password" placeholder="Password" />
+    <button class="btn btn-primary" type="submit">
+        Login
+    </button>
+</form>
+{{>footer.partial}}

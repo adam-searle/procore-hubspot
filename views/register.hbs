@@ -1,0 +1,16 @@
+{{>header.partial}}
+<h4>Register</h4>
+<form method="post" action="/register">
+    <label for="username">Username</label>
+    <input class="form-control" id="username" type="text" name="username" placeholder="Username" />
+    <label for="password">Password</label>
+    <input class="form-control" id="password" type="password" name="password" placeholder="Password" />
+    <label for="confirm_password">Confirm Password</label>
+    <input class="form-control" id="confirm_password" type="password" name="confirm_password" placeholder="Confirm Password"/>
+    <label for="registration_code">Registration Code</label>
+    <input class="form-control" id="registration_code" type="text" name="registration_code" placeholder="Registration Code"/>
+    <button class="btn btn-primary" type="submit">
+        Register
+    </button>
+</form>
+{{>footer.partial}}

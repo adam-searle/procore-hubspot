@@ -1,0 +1,43 @@
+{
+  "post_installation_instruction": {
+    "notes": "For Data Connection Apps, you may need to take additional steps in the third-party App's system to complete the App setup process. For more information, visit the support article below or contact the App developer through the Procore Marketplace.",
+    "page": {
+      "url": "https://support.procore.com/integrations/app-setup-instructions",
+      "label": "App Setup Instructions"
+    }
+  },
+  "components": {
+    "iframe": {
+      "instances": [
+        {
+          "name": "HubSpot",
+          "required": false,
+          "description": "Sync ProCore Data with HubSpot",
+          "iframe_src": "https://procore.hubwidget.com/procore/iframe?procoreCompanyId={{procore.company.id}}&procoreProjectId={{procore.project.id}}",
+          "configuration": {
+            "schema": {
+              "type": "object",
+              "required": [
+                "hsId"
+              ],
+              "properties": {
+                "hsId": {
+                  "name": "HubSpot Id",
+                  "type": "string",
+                  "description": "The Hubspot Id"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "oauth": {
+      "instances": [
+        {
+          "grant_type": "authorization_code"
+        }
+      ]
+    }
+  }
+}
